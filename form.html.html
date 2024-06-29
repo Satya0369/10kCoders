@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        fieldset{
+            background-color: lightgrey;
+            margin:50px 300px;
+            padding: 50px 15px;
+        }
+        legend{
+            padding: 4px 10px;
+            border: 1px solid ;
+            border-radius: 25px;
+            background-color: grey;
+            color:aliceblue;
+            margin-left: 40%;
+            font-size: 21px;
+            
+            
+        }
+        form input,label{
+            margin: 10px 0px;
+        }
+        label[for="Last Name"]{
+            margin-left: 90px;
+        }
+        label[for="num"]{
+            margin-left: 110px;
+        }
+        label[for="birthday"]{
+            margin-left: 212px;
+        }
+        label[for="color"]{
+            margin-left: 71px;
+        }
+        .cen{
+            text-align: center;
+        }
+        label[for="color"]{
+            margin-left: 100px;
+        }
+        /* input[type="text"]{
+            margin-left: ;
+        } */
+         .ee{
+            margin-left: 57px;
+         }
+         .nm{
+            margin-left: 19px;
+         }
+         .gen{
+            margin-left: 48px;
+         }
+         label[for="myfile"]{
+            margin-left: 50px;
+         }
+         button,input[type="reset"]{
+            color:white;
+            background-color: grey;
+            border:2px solid black;
+            padding: 5px 15px;
+            border-radius: 25px;
+            
+            
+         }
+         button:hover,input[type="reset"]:hover{
+            background-color: lightgrey;
+            color: black;
+         }
+
+         input:focus{
+            background-color: grey;
+            color: aliceblue;
+         }
+         input[type="url"]{
+            margin-left: 40px;
+         }
+         /* .star{
+
+         }
+         a:invalid{
+            background-color: brown;
+         } */
+
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Registration</legend>
+            <!-- autocomplete="off" -->
+            <form action="" >
+                <label for="First Name">First Name :</label>
+                <input class="nm" readonly id="fname" name="firstnam" type="text" required pattern="[a-zA-Z]{2,15}" placeholder="Ex: SatyaSai">
+                <span class="star"></span>
+                <label for="Last Name">Last Name :</label>
+                <input type="text" name="lastname" disabled required  placeholder="Ex: Koppineni"><br>
+                <span class="star"></span>
+                <label for="email">Email:</label>
+                <input class="ee" id="email" name="email" type="email" pattern="^[a-zA-Z\d]{3,10}@{1}[a-zA-Z]{5,7}.[a-zA-z]{3}$"  placeholder="Ex: satyasaikoppineni369@gmail.com">
+                <span class="star"></span>
+                <label for="num" >Number:</label>
+                <input type="text" name="num" placeholder="Ex: 9966223634" pattern="^[6-9\d]{9}[3-5]{1}"><br>
+                <span class="star"></span>
+                <label for="Gender">Gender:</label>
+                <!-- multiple -->
+                <select class="gen" size="" >
+                    <option selected >Male</option>
+                    <option>Female</option>
+                    <option  >Mmale</option>
+                    <option>Ffemale</option>
+                </select>
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday" name="birthday" min="1995-12-31" max="2025-12-31"><br>
+                <span class="star"></span>
+                <label for="Skills">Skills:</label>
+                <label for="HTML" ID="HTML" name="1stskill" value="html">HTML:</label><input type="checkbox">
+                CSS<input type="checkbox">
+               
+                JS<input type="checkbox">
+                SQL<INPUT type="checkbox">
+                    <!-- onclick="alert('Form submitted')" -->
+                <!-- <button type="submit" onclick="alert('Form submitted')">Submit</button><br>
+                <input type="reset" value="Reset"> -->
+                <label for="color"> Select background</label>
+               <input type="color"><br>
+               <span class="star"></span>
+               <label for="brows"> Select Browser:</label>
+               
+                <input list="browser">
+               <datalist id="browser">
+                <option value="Chrome">
+                <option value="Fire Fox">
+                <option value="Edge"></option>
+                <option value="Opera">
+                <option value="Safari">
+
+
+               </datalist>
+               
+               <label for="myfile">Upload Resume:</label>
+                <input type="file" id="myfile" name="myfile"><br>
+                <label for="url">LinkedIn:</label>
+                <input type="url" placeholder="url">
+                <span class="star"></span>
+                <div class="cen">
+                    <button type="submit" >Submit</button>
+                <input type="reset" value="Reset">
+
+                </div>
+                
+
+                
+
+
+              
+                
+            </form>
+
+        </fieldset>
+    </div>
+    
+</body>
+</html>
