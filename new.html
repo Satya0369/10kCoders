@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in Css</title>
+    <style>
+        .bg{
+            /* background-image: linear-gradient(#5b5bd2); */
+            background: linear-gradient(#e66465, #9198e5);
+            height: 100vh;
+            width: 100vw;
+            /* display:flex;
+            flex-direction: column;
+            justify-content: center; */
+            /* border: 2px solid blueviolet;
+            margin:20px; */
+
+        }
+        .class1{
+            position: absolute;
+            border:2px solid black;
+            left:50px;
+            top:20px;
+            
+           
+
+        }
+        .class1:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class2:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class3:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class4:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class5:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class6:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class7:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class8:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class9:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        .class10:hover{
+            box-shadow: 0px 0px 15px 10px black;
+        }
+        #id1{
+            position: absolute;
+            color:black;
+           left: 30px;
+           top:-20px;
+           font-size: 50px;
+        }
+        .class2{
+            position: relative;
+            border:2px solid black;
+            left:420px;
+            width:400px;
+            top:20px;
+
+        }
+        #id2{
+            position: absolute;
+            color:black;
+            top:296px;
+            font-size: 50px;
+        }
+        .class3{
+            position: relative;
+            border:2px solid black;
+            left:1020px;
+            width:400px;
+            top:-490px;
+
+        }
+        #id3{
+            position: absolute;
+            color:black;
+            top:296px;
+            font-size: 50px;
+            z-index:10;
+           left:15px;
+            text-align: center;
+        }
+        .class4{
+            position: relative;
+            border:2px solid black;
+            left:1420px;
+            width:400px;
+            top:-1000px;
+
+        }
+        #id4{
+            position: absolute;
+            color:black;
+            top:296px;
+            font-size: 50px;
+            z-index:10;
+           left:15px;
+            text-align: center;
+        }
+        .class5{
+            position: relative;
+            border:2px solid black;
+            left:2010px;
+            width:400px;
+            top:-1408px;
+
+        }
+        #id5{
+            position: absolute;
+            color:black;
+            top:296px;
+            font-size: 50px;
+            z-index:10;
+           left:15px;
+            text-align: center;
+        }
+        .class6{
+            position: relative;
+            border:2px solid black;
+            left:2010px;
+            width:400px;
+            top:-1308px;
+
+        }
+        #id6{
+            position: absolute;
+            color:black;
+            top:210px;
+            font-size: 50px;
+            z-index:10;
+           left:15px;
+            text-align: center;
+        }
+        .class7{
+            position: relative;
+            border:2px solid black;
+            left:1520px;
+            width:400px;
+            top:-1720px;
+
+        }
+        #id7{
+            position: absolute;
+            color:black;
+            top:296px;
+            font-size: 50px;
+            z-index:10;
+           left:15px;
+            text-align: center;
+        }
+        .class8{
+            position: relative;
+            border:2px solid black;
+            left:1020px;
+            width:400px;
+            top:-2235px;
+
+        }
+        #id8{
+            position: absolute;
+            color:black;
+            top:296px;
+            font-size: 50px;
+            z-index:10;
+           left:15px;
+            text-align: center;
+        }
+        .class9{
+            position: relative;
+            border:2px solid black;
+            left:420px;
+            width:400px;
+            top:-2645px;
+
+        }
+        #id9{
+            position: absolute;
+            color:black;
+            top:296px;
+            font-size: 50px;
+        }
+        .class10{
+            position: absolute;
+            border:2px solid black;
+            left:50px;
+            top:530px;
+           
+
+        }
+        #id10{
+            position: absolute;
+            color:black;
+           left: 30px;
+           top:-20px;
+           font-size: 50px;
+        }
+        .wat{
+            font-size: 60px;
+            position: absolute;
+            top:350px;
+            left:480px;
+            opacity:0.6;
+            z-index:10;
+            display: block;
+            transform: rotate(-35deg);
+            
+        }
+        #section1{
+                    background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        height: 100%;
+        width: auto;
+                }
+        .parent{
+
+            /* margin: 150px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            /* background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+
+        }
+        .content{
+            position: relative;
+            top: 150px;
+            font-size: 40px;
+            left: -970px;
+             color: aliceblue;
+        }
+        .sticky{
+            position: sticky;
+            top:-120px;
+            left:1500px;
+
+        }
+        div.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        
+        bottom: -2500;
+        background-color: green;
+        border: 2px solid #4CAF50;
+        }
+        .ccdd{
+            font-size: 400px;
+            position: fixed;
+            z-index:10;
+            color:black;
+            
+        }
+    </style>
+</head>
+<body class="bg">
+
+    <div>
+    <div class="bg">
+      
+        <div class="class1">
+            <h1 id="id1">Black Panther</h1>
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_blackpanther_19754_4ac13f07.jpeg?region=0%2C0%2C540%2C810" alt="BlackPanther" height="400" width="400">
+        </div> 
+        <div class="class2" style="margin-left: 100px;">
+            <h1 id="id2">Captain America</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyvjcNO6pcdM75KcyaENmG4-tFtGKfAFm0g&s" alt="BlackPanther" height="400" width="400">
+        </div>
+        <div class="class3" style="margin-top:100px;">
+            <h1 id="id3" >Spiderman</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWd6-FTKl-a8bsJw_UFkjqU9TJ_XvO6ZAsQ&s" alt="BlackPanther" height="400" width="400">
+        </div>
+        <div class="class4" style="margin-top:100px; margin-left:100px;" >
+                <h1 id="id4" style="color:black">BlackWidow</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_YnzpCBFYQ7-J-sT7NH11TDUD_pJOFr2Tw&s" alt="BlackPanther" height="400" width="400">
+                   
+        
+        </div> 
+        <div class="class5">
+            <h1 id="id5">Miss Marvel</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdH_IlA-Fy3rq0u0kxRR7Yb-8QMH6N4efwBQ&s" alt="BlackPanther" height="400" width="400">
+         </div> 
+         <div class="class6">
+            <h1 id="id6">Docter Strange</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRev09boOgmOWdI7w53spe-Lj7Dgjvx9dOobg&s" alt="BlackPanther" height="400" width="400">
+        </div> 
+        <div class="class7">
+            <h1 id="id7">Thanos</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNiT-uTYIuHya4KhWp7_sjdTRTpgmGjZcxhA&s" alt="BlackPanther" height="400" width="400">
+         </div> 
+         <div class="class8" style="margin-top:100px;">
+            <h1 id="id8" >Thor</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkV8lK3u-uxV_SIguZ-JzYEdqQABHDlBX-eQ&s" alt="BlackPanther" height="400" width="400">
+        </div>
+        <div class="class9" style="margin-left: 100px;">
+            <h1 id="id9">Hawkayee</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPFdjEjSSxrNePr7O_0ZNmWdr6i5UWzQwScA&s" alt="BlackPanther" height="400" width="400">
+        </div>
+        <div class="class10">
+            <h1 id="id10">Rocket</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Aco7WyPN3nGQWRwuUNL1Irb-IlbZ3zoUFg&s" alt="BlackPanther" height="400" width="400">
+        </div> 
+        <div CLASS="wat"><H1>MARVEL CHARACTERS</H1></div>
+        <!-- <div class="sticky"><h1>This is Sticky</h1></div> -->
+       <a title="This is Fixed" class="ccdd" href="https://wa.me/9966223634">Hello,This is Sticky
+    </a>
+        <!-- <div class="sticky"><h1>This is Sticky</h1></div> -->
+        
+          <h1 style="position: fixed; z-index:10;">Satya</h1> </div>
+        </div>
+           <div id="section1">
+            <div class="parent">
+                <h1 style="text-align: center; font-size: 50px;">Text on Video</h1>
+                <div class="child">
+                   
+                    <video src="./pk.mp4" controls height="800" width="1000"></video>
+                </div>
+                <div class="content"><h1>Content on the Video</h1></div>
+            </div>
+           </div>
+
+    
+    
+</body>
+</html>
