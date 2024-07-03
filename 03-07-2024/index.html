@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        fieldset{
+            background-color: lightgrey;
+            margin:50px 300px;
+            padding: 50px 15px;
+        }
+        legend{
+            padding: 4px 10px;
+            border: 1px solid ;
+            border-radius: 25px;
+            background-color: grey;
+            color:aliceblue;
+            margin-left: 40%;
+            font-size: 21px;
+            
+            
+        }
+        form input,label{
+            margin: 10px 0px;
+        }
+        label[for="Last Name"]{
+            margin-left: 90px;
+        }
+        label[for="num"]{
+            margin-left: 110px;
+        }
+        label[for="birthday"]{
+            margin-left: 212px;
+        }
+        label[for^="color"]{
+            margin-left: 71px;
+        }
+        div[class ~="button"]{
+            text-align: center;
+        }
+        /* .cen{
+            text-align: center;
+        } */
+        label[for="color"]{
+            margin-left: 100px;
+        }
+        /* input[type="text"]{
+            margin-left: ;
+        } */
+         input[type="email"]{
+            margin-left: 57px;
+         }
+         /* .ee{
+            margin-left: 57px;
+         } */
+          input[class$="fname"]{
+            margin-left: 19px;
+         }
+         /* .nm{
+            margin-left: 19px;
+         } */
+         /* .gen{
+            margin-left: 48px;
+         } */
+          select[class^="gen"]{
+            margin-left: 48px;
+         } 
+         label[for="myfile"]{
+            margin-left: 50px;
+         }
+         button,input[type="submit"]{
+            color:white;
+            background-color: grey;
+            border:2px solid black;
+            padding: 5px 15px;
+            border-radius: 25px;
+            
+            
+         }
+         button,input[type="button"]{
+            color:white;
+            background-color: grey;
+            border:2px solid black;
+            padding: 5px 15px;
+            border-radius: 25px;
+            
+            
+         }
+         button:hover,input[type="submit"]:hover{
+            background-color: lightgrey;
+            color: black;
+         }
+         button:hover,input[type="button"]:hover{
+            background-color: lightgrey;
+            color: black;
+         }
+
+         input:focus{
+            background-color: grey;
+            color: aliceblue;
+         }
+         /* input[type*="url"]{
+            margin-left: 40px;
+         } */
+         input[type*="url"]{
+            margin-left: 40px;
+         }
+         label[class|="min"]{
+            margin-left: 110px;
+         }
+         /* .star{
+
+         }
+         a:invalid{
+            background-color: brown;
+         } */
+
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Registration</legend>
+            <!-- autocomplete="off" -->
+            <form action="" >
+                <label for="First Name">First Name :</label>
+                <input class="nm-sai-fname" id="fname" name="firstnam" type="text" required pattern="[a-zA-Z]{2,15}" placeholder="Ex: SatyaSai">
+                <span class="star"></span>
+                <label for="Last Name">Last Name :</label>
+                <input type="text" name="lastname"  required  placeholder="Ex: Koppineni"><br>
+                <span class="star"></span>
+                <label for="email">Email:</label>
+                <input class="ee" id="email" name="email" type="email" pattern="^[a-zA-Z\d]{3,10}@{1}[a-zA-Z]{5,7}.[a-zA-z]{3}$"  placeholder="Ex: satyasaikoppineni369@gmail.com">
+                <span class="star"></span>
+                <label for="num" >Number:</label>
+                <input type="text" name="num" placeholder="Ex: 9966223634" pattern="^[6-9\d]{9}[3-5]{1}"><br>
+                <span class="star"></span>
+                <label for="Gender">Gender:</label>
+                <!-- multiple -->
+                <select class="gen gender" size="" >
+                    <option selected >Male</option>
+                    <option>Female</option>
+                    <option  >Mmale</option>
+                    <option>Ffemale</option>
+                </select>
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday" name="birthday" min="1995-12-31" max="2025-12-31"><br>
+                <span class="star"></span>
+               
+                    <!-- onclick="alert('Form submitted')" -->
+                <!-- <button type="submit" onclick="alert('Form submitted')">Submit</button><br>
+                <input type="reset" value="Reset"> -->
+               
+
+
+              
+               
+              
+                <label for="url">LinkedIn:</label>
+                <input type="url" placeholder="url">
+                <label for=" git-url" class="min-max">Github:</label>
+                <input type="url" style="margin-left: 6px;" placeholder="url"><br>
+                <br><br>
+                <div class="cen button">
+                    <button type="submit" >Confirm</button>
+
+                </div>
+                
+
+                
+
+
+              
+                
+            </form>
+
+        </fieldset>
+    </div>
+    
+</body>
+</html>
