@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media screen and (min-width:200px){
+            h1{
+                font-size: 40px;
+                background-color: blue;
+            }
+        }
+        @media screen and (min-height:200px){
+            h1{
+                font-size: 80px;
+                background-color: red;
+            }
+        } */
+         *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+         }
+         .bg{
+            border: 2px solid black;
+            margin: 20px;
+            padding: 15px;
+            height: 100%;
+            width: 100%;
+         }
+         .bg1{
+            height: 30vh;
+            width:100%;
+            margin:30px;
+            display: contents;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+         }
+         .img{
+            height: 100%;
+            width:100%;
+            margin: 5px;;
+         }
+         .img:hover{
+            box-shadow: 0px 0px 25px 25px grey;
+         }
+       
+         @media screen and (min-width:320px) and (max-width:425px) {
+            
+            .img3,.img4,.img7,.img8,.three,.four,.m2,.m3{
+            display: none;
+            }
+            .m1{
+                font-size: 40px;
+            }
+         }
+         @media screen and (min-width:425px) and (max-width:768px) {
+            .img4,.img8,.img12,.four,.m1,.m3{
+            display: none;
+            }
+            .m2{
+                font-size: 40px;
+            }
+         }
+         @media screen and (min-width:768px) {
+            .m1,.m2{
+            display: none;
+            }
+            .m3{
+                font-size: 40px;
+            }
+         }
+        
+
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <h1 class="m1" align="center">2 x 2</h1>
+        <h1 class="m2" align="center">3 x 3</h1>
+        <h1 class="m3" align="center">4 x 4</h1>
+        <div class="bg1">
+            <span><img class="img img1" src="./thor.jfif" alt=""></span>
+            <span><img class="img img2" src="./captain.jfif" alt=""></span>
+            <span ><img class="img img3" src="./doctor.jfif" alt=""  ></span>
+            <span><img class="img img4" src="./hela.jfif" alt=""  ></span>
+        </div>
+        <div class="bg1">
+            <span><img class="img img5" src="./ironman.jfif" alt=""></span>
+            <span><img class="img img6" src="./roc1.jfif" alt=""></span>
+            <span><img class="img img7" src="./hulk.jfif" alt=""  ></span>
+            <span><img class="img img8" src="./deadpool.jfif" alt=""  ></span>
+        </div>
+        <div class="bg1 three">
+            <span><img class="img img9" src="./wanda.jfif" alt=""></span>
+            <span><img class="img img10" src="./guard.jfif" alt=""></span>
+            <span><img class="img img11" src="./groot2.jfif" alt=""  ></span>
+            <span><img class="img img12" src="./guard1.jfif" alt=""  ></span>
+        </div>
+        <div class="bg1 four">
+            <span><img class="img img13" src="./guard3.jfif"   alt=""></span>
+            <span><img class="img img14" src="./roc2.jfif"  alt=""></span>
+            <span><img class="img img15" src="./thor1.jfif"   alt=""  ></span>
+            <span><img class="img img16" src="./avg.jfif" alt=""  ></span>
+        </div>
+    </div>
+    
+</body>
+</html>
